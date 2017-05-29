@@ -1,10 +1,38 @@
-<table border="1"> <!-- Using border just for visual guide. Will be removed. -->
+<table border="0"
+       cellpadding="0"
+       cellspacing="0"
+       style="width: 600px;
+              font-family: 'Helvetica Neue',
+                            Helvetica,
+                            Arial,
+                            sans-seif;
+              font-size: 18px;
+              font-weight: 300;"> <!-- Being able to set cell padding and
+                                       spacing attributes this way and have wide
+                                       support for them across most email
+                                       clients is why tables are a great option
+                                       for email.
+
+                                       Found this font family priority from
+                                       Apartment List emails I've recieved.
+
+                                       font-weight here is one step below the
+                                       normal of 400 and makes the font look
+                                       like the rest the Apartment List emails
+                                       I've received.-->
   <tbody>
     <tr>
-      <td>
+      <td style="text-align: right;">
         <img src="http://images.postdirect.com/master/9/1180712/logo@2x.png"
-             alt="Apartment List"> <!-- Found this header image in emails sent
-                                        to me when using Apartment List -->
+             alt="Apartment List"
+             width="244"
+             height"40"
+             style="width: 244px;
+                    height: 40px;"><!-- Found this header image in emails sent
+                                        to me when using Apartment List.
+
+                                        Setting width and height in both element
+                                        attributes and css to hedge my bets. -->
       </td>
     </tr>
     <tr>
@@ -13,14 +41,13 @@
         Hey Lisa,
         <br>
         <br>
-        Thanks for coming out to another Family Friday night. We know engaging
+        Thanks for coming out to another Family Friday. We know engaging
         with your fellow A-Listers is a rewarding expereince, and we want to
         make sure nothing gets in the way of that. To that end, we would like
         to get your opinion on Pizza R Us, the restaurant you attended with
-        <a href="mailto:rohit@mycompany.com">Rhoit</a> and
-        <a href="mailto:maria@mycompany.com">Maria</a>. <!-- Linking to
-                                                              emails here just
-                                                              makes sense -->
+        <a href="mailto:rohit@mycompany.com">Rhoit from finance</a> and
+        <a href="mailto:maria@mycompany.com">Maria from operations</a>.
+            <!-- Linking to emails here just makes sense. -->
         <br>
         <br>
         Cheers,
@@ -34,79 +61,103 @@
     <tr>
       <td>
 
-        <table border="1">
+        <table border="0"
+               cellpadding="0"
+               cellspacing="0"
+               style="width: 100%;">
           <tbody>
             <tr>
-              <td>
+              <td style="width: 220;">
                 <a href="https://www.yelp.com/biz/pizzas-r-us-birmingham">
                 <img src="http://i.imgur.com/RozeCeX.jpg"
-                     alt="Pizza R Us Logo"> <!-- Since the payload didn't use
-                                                 an actual logo or yelp link
-                                                 I've grabbed some examples. -->
+                     alt="Pizza R Us Logo"
+                     style="width: 220;
+                            height: 165;"> <!-- Since the payload didn't use
+                                                an actual logo or yelp link
+                                                I've grabbed some examples. -->
+                </a>
               </td>
               <td>
 
-                <table border="1">
-                     <tbody>
-                       <tr>
-                         <td>
-                           Rate Pizza R Us out of 5 stars.
-                         </td>
-                       </tr>
-                       <tr>
-                         <td>
-                           <table border="1"> <!-- This table houses 7
-                                                   segmented images that are
-                                                   meant to appear as one bar.
-                                                   the first and seventh cells
-                                                   in the row are intended to be
-                                                   graphical bookends that make
-                                                   it pretty -->
-                             <tbody>
-                               <tr>
-                                 <td>
-                                   <img src="left_end.jpg">
-                                 </td>
-                                 <td>
-                                   <a href="https://www.campaignprovider.com/thanks?vote=1_star">
-                                     <img src="1_star.jpg" alt="1 Star"> <!-- The url is a dummy
-                                                                              url meant to
-                                                                              represent the links
-                                                                              we'd use from an
-                                                                              email campaign
-                                                                              partner. -->
-                                   </a>
-                                 </td>
-                                 <td>
-                                   <a href="https://www.campaignprovider.com/thanks?vote=2_star">
-                                     <img src="2_star.jpg" alt="2 Star">
-                                   </a>
-                                 </td>
-                                 <td>
-                                   <a href="https://www.campaignprovider.com/thanks?vote=3_star">
-                                     <img src="3_star.jpg" alt="3 Star">
-                                   </a>
-                                 </td>
-                                 <td>
-                                   <a href="https://www.campaignprovider.com/thanks?vote=4_star">
-                                     <img src="4_star.jpg" alt="4 Star">
-                                   </a>
-                                 </td>
-                                 <td>
-                                   <a href="https://www.campaignprovider.com/thanks?vote=5_star">
-                                     <img src="5_star.jpg" alt="5 Star">
-                                   </a>
-                                 </td>
-                                 <td>
-                                   <img src="right-end.jpg">
-                                 </td>
-                               </tr>
-                             </tbody>
-                           </table>
+                <table border="0"
+                       cellpadding="0"
+                       cellspacing="0"
+                       style="width: 100%;
+                              font-family: 'Helvetica Neue',
+                                            Helvetica,
+                                            Arial,
+                                            sans-serif;
+                              font-size: 18px;
+                              font-weight: 300;">
+                   <tbody>
+                     <tr>
+                       <td colspan="2" style="text-align: center;">
+                         Rate <a href="https://www.yelp.com/biz/pizzas-r-us-birmingham">
+                                Pizza R Us</a> out of 5 stars.
+                       </td>
+                     </tr>
+                     <tr >
+                       <td colspan="2">
 
-                         </td>
-                       </tr>
-                     </tbody>
+                         <table border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                style="width: 100%;"> <!-- This table houses 5
+                                                           cells in the same row
+                                                           that make up our
+                                                           rating bar. Each
+                                                           contains a unicode
+                                                           star we can style
+                                                           through font/text
+                                                           css properities. -->
+                           <tbody>
+                             <tr style="font-size: 58px;
+                                        text-align: center;">
+                               <td>
+                                 <a href="https://www.campaignprovider.com/thanks?vote=1_star">
+                                   ★ <!-- The url is a dummy url meant to
+                                          represent the links we'd use from an
+                                          email campaign partner.
+
+                                          Swapped out image for unicode stars.
+                                          Lightweight! -->
+                                 </a>
+                               </td>
+                               <td>
+                                 <a href="https://www.campaignprovider.com/thanks?vote=2_star">
+                                   ★
+                                 </a>
+                               </td>
+                               <td>
+                                 <a href="https://www.campaignprovider.com/thanks?vote=3_star">
+                                   ★
+                                 </a>
+                               </td>
+                               <td>
+                                 <a href="https://www.campaignprovider.com/thanks?vote=4_star">
+                                   ★
+                                 </a>
+                               </td>
+                               <td>
+                                 <a href="https://www.campaignprovider.com/thanks?vote=5_star">
+                                   ★
+                                 </a>
+                               </td>
+                             </tr>
+                           </tbody>
+                         </table>
+
+                       </td>
+                     </tr>
+                     <tr>
+                       <td align="left">
+                         Hated it..
+                       </td>
+                       <td align="right">
+                         ..Loved it
+                       </td>
+                     </tr>
+                   </tbody>
                 </table>
 
               </td>
