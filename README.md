@@ -12,6 +12,13 @@
   - Working without <p> tags and just using <br> to shape text allows for more fine control that is again most widely supported by email clients. Hopefully can use line-height in css (which I understand is best supported when used inline in email.
   - Make use of as much payload data in ways that make sense.
   - There was a header logo in Apartment List's current emails that was easily usable for our template.
-  - http://images.postdirect.com/master/9/1180712/logo@2x.png
+    - http://images.postdirect.com/master/9/1180712/logo@2x.png
   - Nesting tables is actually encouraged and works as a good way to get clickable rating system under the text of the email.
   - Most obvious way to make links trackable is to use Google Analytics.
+
+## Notes From Adding Rating Bar & Thinking Ahead
+  - Email marketing providers typically use a links that use query formatted stings on the end for response tracking. Cleaner and better supported than using forms.
+  - Even though payload didn't include actual logo image file and a real yelp link we can find some to use as examples.
+  - Google Analytics has "Custom Campaigns" that derive contextual tracking information from url query parameters.
+    - Google Analytics' URL Query Builder: https://ga-dev-tools.appspot.com/campaign-url-builder/
+  - Find images for ratings bar from permissively licensed image assets or create them myself?
