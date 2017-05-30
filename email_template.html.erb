@@ -1,0 +1,224 @@
+<table border="0"
+       cellpadding="0"
+       cellspacing="0"
+       style="width: 100%;
+              max-width: 600px;
+              font-family: 'Helvetica Neue',
+                            Helvetica,
+                            Arial,
+                            sans-seif;
+              font-size: 18px;
+              font-weight: 300;"> <!-- Being able to set cell padding and
+                                       spacing attributes this way and have wide
+                                       support for them across most email
+                                       clients is why tables are a great option
+                                       for email.
+
+                                       Changing from a width of 600px to 100%
+                                       with a max of 600px is a simple way to
+                                       let the email scale better for mobile
+                                       screen sizes.
+
+                                       Found this font family priority from
+                                       Apartment List emails I've recieved.
+
+                                       font-weight here is one step below the
+                                       normal of 400 and makes the font look
+                                       like the rest the Apartment List emails
+                                       I've received.-->
+  <tbody>
+    <tr>
+      <td style="text-align: right;">
+        <img src="http://images.postdirect.com/master/9/1180712/logo@2x.png"
+             alt="Apartment List"
+             width="244"
+             height"40"
+             style="width: 244px;
+                    height: 40px;"><!-- Found this header image in emails sent
+                                        to me when using Apartment List.
+
+                                        Setting width and height in both element
+                                        attributes and css to hedge my bets. -->
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: justify;">
+        <br>
+        Hey <%= @employee[:name] %>,
+        <br>
+        <br>
+        Thanks for coming out to another Family Friday. We know engaging
+        with your fellow A-Listers is a rewarding expereince, and we want to
+        make sure nothing gets in the way of that. To that end, we would like
+        to get your opinion on <%= @restaurant[:name] %> the restaurant you
+        attended with
+        <a href="mailto:<%= @companions[0][:email] %>"><%= @companions[0][:name] %> from
+        <%= @companions[0][:team] %></a> and
+        <a href="mailto:<%= @companions[1][:email] %>"><%= @companions[1][:name] %> from
+        <%= @companions[1][:team] %></a>.
+            <!-- Linking to emails here just makes sense. -->
+        <br>
+        <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table border="0"
+               cellpadding="0"
+               cellspacing="0"
+               style="width: 100%;">
+          <tbody>
+            <tr>
+              <td style="size: 7.45%">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+              </td>
+              <td style="text-aign: center;">
+                <a href="<%= @restaurant[:yelp_link] %>">
+                <img src="<%= @restaurant[:logo] %>"
+                     alt="<%= @restaurant[:name] %> Logo"
+                     style="width: 220;
+                            height: 220;"> <!-- Since the payload didn't use
+                                                an actual logo or yelp link
+                                                I've grabbed some examples. -->
+                </a>
+              </td>
+              <td>
+
+                <table border="0"
+                       cellpadding="0"
+                       cellspacing="0"
+                       style="width: 100%;
+                              font-family: 'Helvetica Neue',
+                                            Helvetica,
+                                            Arial,
+                                            sans-serif;
+                              font-size: 18px;
+                              font-weight: 400;">
+                   <tbody>
+                     <tr>
+                       <td colspan="2" style="text-align: center;
+                                              font-size: 22px;">
+                         Click a star to rate <%= @restaurant[:name] %>.
+                       </td>
+                     </tr>
+                     <tr >
+                       <td colspan="2">
+
+                         <table border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                style="width: 100%;"> <!-- This table houses 5
+                                                           cells in the same row
+                                                           that make up our
+                                                           rating bar. Each
+                                                           contains a unicode
+                                                           star we can style
+                                                           through font/text
+                                                           css properities. -->
+                           <tbody>
+                             <tr style="font-size: 58px;
+                                        text-align: center;">
+                               <td>
+                                 <a href="https://www.campaignprovider.com/thanks?utm_source=outreach%26utm_medium=email%26utm_campaign=pizza_r_us_rating%26utm_term=1_star"
+                                    style="text-decoration: none;
+                                           color: #D3D3D3;
+                                           text-shadow: -2px 0 black,
+                                                         0 2px black,
+                                                         2px 0 black,
+                                                         0 -2px black;">
+                                           <!-- The url is a dummy url meant to
+                                                  represent the links we'd use
+                                                  from an email campaign
+                                                  partner. -->
+
+                                   ★ <!-- Swapped out image for unicode stars.
+                                          Lightweight! -->
+                                 </a>
+                               </td>
+                               <td>
+                                 <a href="https://www.campaignprovider.com/thanks?utm_source=outreach%26utm_medium=email%26utm_campaign=pizza_r_us_rating%26utm_term=2_star"
+                                    style="text-decoration: none;
+                                           color: #DED49E;
+                                           text-shadow: -2px 0 black,
+                                                         0 2px black,
+                                                         2px 0 black,
+                                                         0 -2px black;">
+                                           <!-- We essentially create four
+                                           shadows offset by 2px in each
+                                           direction to give the illusion of an
+                                           outline -->
+                                   ★
+                                 </a>
+                               </td>
+                               <td>
+                                 <a href="https://www.campaignprovider.com/thanks?utm_source=outreach%26utm_medium=email%26utm_campaign=pizza_r_us_rating%26utm_term=3_star"
+                                    style="text-decoration: none;
+                                           color: #E9D569;
+                                           text-shadow: -2px 0 black,
+                                                         0 2px black,
+                                                         2px 0 black,
+                                                         0 -2px black;">
+                                   ★
+                                 </a>
+                               </td>
+                               <td>
+                                 <a href="https://www.campaignprovider.com/thanks?utm_source=outreach%26utm_medium=email%26utm_campaign=pizza_r_us_rating%26utm_term=4_star"
+                                    style="text-decoration: none;
+                                           color: #F4D634;
+                                           text-shadow: -2px 0 black,
+                                                         0 2px black,
+                                                         2px 0 black,
+                                                         0 -2px black;">
+                                   ★
+                                 </a>
+                               </td>
+                               <td>
+                                 <a href="https://www.campaignprovider.com/thanks?utm_source=outreach%26utm_medium=email%26utm_campaign=pizza_r_us_rating%26utm_term=5_star"
+                                    style="text-decoration: none;
+                                           color: #FFD600;
+                                           text-shadow: -2px 0 black,
+                                                         0 2px black,
+                                                         2px 0 black,
+                                                         0 -2px black;">
+                                   ★
+                                 </a>
+                               </td>
+                             </tr>
+                           </tbody>
+                         </table>
+
+                       </td>
+                     </tr>
+                     <tr>
+                       <td align="left">
+                         Hated it..
+                       </td>
+                       <td align="right">
+                         ..Loved it
+                       </td>
+                     </tr>
+                   </tbody>
+                </table>
+
+              </td>
+              <td style="size: 7.45%">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </td>
+      </tr>
+    <tr>
+      <td>
+        <br>
+        Cheers,
+        <br>
+        <br>
+        Your Friendly Family Friday Facilitators <!-- <3 alliteration -->
+        <br>
+        <br>
+        </td>
+    </tr>
+  </tbody>
+</table>
