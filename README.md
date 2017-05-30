@@ -2,6 +2,11 @@
 
 ### Delivered
 
+![Email in Gmail web client, Chrome 58.0.3029.110, macOS Sierra 10.12.4](
+  http://i.imgur.com/8wpFteh.png
+  )
+Email in Gmail web client, Chrome 58.0.3029.110, macOS Sierra 10.12.4
+
 I have delivered an html file that is a sample email using data from the
 payload. I did this because I preferred to focus on the HTML/CSS challenges.
 Rest assured that I understand how to traverse the payload object as if it were
@@ -47,6 +52,6 @@ client. Need to write and integrate media queries.
 
 Use attribute selectors to possibly build an interactive rating bar.
 
-Get a litmus subscription. I quickly ran over the number of preview renders 
+Get a litmus subscription. I quickly ran over the number of preview renders
 (because they count renders of the unchanged code every time you reload the
 builder)!
