@@ -26,5 +26,5 @@
 ## Notes from styling
   - Uncomfortable with the use of &nbsp;-spaces to pad but expect it to be more reliable than the padding css property in more email clients
   - Struggled to find a HTML/some-css-only solution for the rating bar that could convey its purpose semantically. Used the gradient to achieve the best measure of it I could for the solution I had.
-    - Found a cool tool that will calculate x (between 3-63) hex codes for colors that form a gradient from two given colors.
+    - Found a cool tool that will calculate x (between 3-63) hex codes for colors that form a gradient from two given colors: http://www.perbang.dk/rgbgradient/
   - I used Litmus' free preview to see some rendering across different email clients. There's definitely a mobile problem that I would love to fix next.
