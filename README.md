@@ -55,3 +55,6 @@ Use attribute selectors to possibly build an interactive rating bar.
 Get a litmus subscription. I quickly ran over the number of preview renders
 (because they count renders of the unchanged code every time you reload the
 builder)!
+
+Work the email generation into a better file structure (create a generator
+class)
